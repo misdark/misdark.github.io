@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    font-family: Roboto;
+}
+
+@font-face {
+    font-family: blogger;
+    src: url("../fonts/bsb.otf");
+}
+
+@font-face {
+    font-family: bloggerT;
+    src: url("../fonts/bs.otf");
+}
+
+body {
+    padding-top: 50px;
+    background-color: black;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;height: auto;
+}
+
+#menuBar {
+    position: fixed;
+    top: 0;left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;height: auto;
+    margin-bottom: 10px;
+    padding: 5px;
+    z-index: 150;
+}
+
+#logoTop {
+    margin-left: 0px;
+}
+
+#logo {
+    width: 50px;
+}
+
+#menuBtn {
+    margin-top: -10px;
+    margin-right: 20px;
+}
+
+#menuBtn span {
+    display: block;
+    width: 33px;height: 5px;
+    border-radius: 999px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+#menuBtn span:nth-child(2) {
+    width: 25px;
+}
+
+#menuBtn span:nth-child(3) {
+    background-color: #B73733;
+}
+
+#menus {
+    position: fixed;
+    width: 179px;height: 100%;
+    right: -180px;top: 0;
+    background-color: black;
+    z-index: 150;
+    transition: right .5s;
+    border-left: 1px solid #B73733;
+}
+
+#closeMenu {
+    position: absolute;
+    top: 0;right: 0;
+}
+
+#closeMenu span {
+    position: absolute;
+    top: 20px;right: 10px;
+    display: block;
+    width: 30px;height: 5px;
+    background-color: white;
+    border-radius: 999px;
+    transform: rotate(45deg);
+}
+
+#closeMenu span:nth-child(2) {
+    transform: rotate(135deg);
+}
+
+#optionMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;height: 100%;
+}
+
+#optionMenu a {
+    margin: 3% 0;
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid #B73733;
+    font-family: bloggerT;
+}
+
+#portoUnduh {
+    position: absolute;
+    bottom: 20px;left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    padding: 10px 0;
+    background-color: white;
+    border-radius: 999px;
+    border: none;outline: none;
+    border-bottom: 2px solid #B73733;
+}
+
+#portoUnduh b {
+    font-family: bloggerT;
+    letter-spacing: 2px;
+}
+
+#profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin-bottom: 60px;
+}
+
+#halfBody {
+    position: relative;
+    width: 200px;
+    z-index: -100;
+    border-radius: 50%;
+}
+
+#names h2 {
+    color: white;
+    background-color: #B73733;
+    border-radius: 999px;
+    padding: 6px 40px 4px 40px;
+    font-family: blogger;
+    margin-bottom: 5px;
+    margin-top: -10px;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+#names h3 {
+    position: relative;
+    color: #B73733;
+    background-color: transparent;
+    border: 2px solid #B73733;
+    border-radius: 999px;
+    padding: 5px 30px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.details {
+    width: 95%;height: 120px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.details h2 {
+    color: #B73733;
+    font-family: blogger;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.details p {
+    color: white;
+    letter-spacing: .2px;
+    line-height: 130%;
+    font-family: bloggerT;
+}
